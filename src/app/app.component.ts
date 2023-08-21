@@ -3,8 +3,19 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'pw';
+  // constructor() {
+  //   this.password = '';
+  // }
+  password = '';
+
+  onButtonClick() {
+    this.password = 'My password';
+  }
+
+  getPassword() {
+    return this.password
+  }
 }
